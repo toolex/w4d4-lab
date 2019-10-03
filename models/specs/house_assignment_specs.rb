@@ -28,9 +28,9 @@ class TestStudent < MiniTest::Test
     assert_equal(14, result)
   end
 
-  def test_house
-    result = @student.house
-    assert_equal("Gryffindor", result)
-  end
+  # def test_house
+  #   result = @student.house
+  #   assert_equal("Gryffindor", result)
+  # end
 
 end
