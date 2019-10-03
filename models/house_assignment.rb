@@ -5,7 +5,7 @@ class Student
   attr_reader :id, :first_name, :last_name, :age, :house
 
   def initialize(options)
-    @id = options['id'].to_i
+    @id = options['id'].to_i()
     @first_name = options['first_name']
     @last_name = options['last_name']
     @age = options['age'].to_i
@@ -38,7 +38,7 @@ class Student
     sql = "SELECT * FROM students WHERE id = $1"
     values = [id]
     student = SqlRunner.run(sql,values)
-    result = Student.new(student).first
+    result = Student.new(student.first)
     return result
   end
 
