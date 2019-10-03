@@ -5,7 +5,7 @@ student1 = Student.new({
   "last_name" => "Potter",
   "age" => 14,
   "house" => "Gryffindor"
-  })
+  }).save()
 
 
   student2 = Student.new({
@@ -13,4 +13,4 @@ student1 = Student.new({
     "last_name" => "Malfoy",
     "age" => 14,
     "house" => "Slytherin"
-    })
+    }).save()

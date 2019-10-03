@@ -24,3 +24,7 @@ post "/hogwarts" do
   @student.save()
   erb(:create)
 end
+
+get "/hogwarts/new" do
+
+end

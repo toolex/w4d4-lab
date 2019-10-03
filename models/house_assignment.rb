@@ -8,7 +8,7 @@ class Student
     @id = options['id'].to_i
     @first_name = options['first_name']
     @last_name = options['last_name']
-    @age = options['age']
+    @age = options['age'].to_i
     @house = options['house']
   end
 
